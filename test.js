@@ -1,6 +1,6 @@
 import test from 'brittle'
 import https from 'https'
-import DANEAgent, { setServers, lookup } from './dane-agent.js'
+import { DANEAgent, setServers, lookup } from './dane-agent.js'
 
 setServers([
   '103.196.38.38',

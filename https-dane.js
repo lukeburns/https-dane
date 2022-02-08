@@ -10,9 +10,6 @@ const verify = cert => tlsa => {
   }
 }
 
-export const lookup = dns.legacy
-export const setServers = dns.setServers
-
 export default class DANEAgent extends https.Agent {
   constructor (options = {}) {
     super({ ...options, rejectUnauthorized: false })
@@ -32,3 +29,7 @@ export default class DANEAgent extends https.Agent {
     })
   }
 }
+
+export { DANEAgent }
+export const lookup = dns.legacy
+export const setServers = dns.setServers

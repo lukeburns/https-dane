@@ -1,8 +1,8 @@
 {
-  "name": "daneagent",
+  "name": "https-dane",
   "version": "0.1.0",
   "description": "",
-  "main": "dane-agent.js",
+  "main": "https-dane.js",
   "type": "module",
   "scripts": {
     "test": "node test.js"

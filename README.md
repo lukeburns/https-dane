@@ -2,11 +2,11 @@
 
 ## Usage
 
-`npm i daneagent`
+`npm i https-dane`
 
 ```js
 import https from 'https'
-import DANEAgent, { setServers, lookup } from 'daneagent'
+import { DANEAgent, setServers, lookup } from 'https-dane'
 
 setServers([
   '103.196.38.38',
