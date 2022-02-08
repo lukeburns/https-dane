@@ -1,6 +1,6 @@
 {
   "name": "https-dane",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "https-dane.js",
   "type": "module",
