@@ -8,7 +8,7 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "hdns": "^0.7.0"
+    "hdns": "github:lukeburns/hdns"
   },
   "devDependencies": {
     "brittle": "^2.0.3"
