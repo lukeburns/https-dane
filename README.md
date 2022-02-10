@@ -5,8 +5,8 @@
 `npm i https-dane`
 
 ```js
-import https from 'https'
-import { DANEAgent, setServers, lookup } from 'https-dane'
+const https = require('https')
+const { DANEAgent, setServers, lookup } = require('https-dane')
 
 setServers([
   '103.196.38.38',

@@ -1,6 +1,6 @@
-import test from 'brittle'
-import https from 'https'
-import { DANEAgent, setServers, lookup } from './https-dane.js'
+const { test } = require('brittle')
+const https = require('https')
+const { DANEAgent, setServers, lookup } = require('./https-dane.js')
 
 setServers([
   '103.196.38.38',

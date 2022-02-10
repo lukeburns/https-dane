@@ -1,5 +1,5 @@
-import https from 'https'
-import dns from 'hdns'
+const https = require('https')
+const dns = require('hdns')
 
 const DANE = Symbol('dane')
 const verify = cert => tlsa => {
@@ -10,7 +10,7 @@ const verify = cert => tlsa => {
   }
 }
 
-export default class DANEAgent extends https.Agent {
+class DANEAgent extends https.Agent {
   constructor (options = {}) {
     super({ ...options, rejectUnauthorized: false })
     this.on('keylog', (line, socket) => {
@@ -30,6 +30,9 @@ export default class DANEAgent extends https.Agent {
   }
 }
 
-export { DANEAgent }
-export const lookup = dns.legacy
-export const setServers = dns.setServers
+module.exports = {
+  DANEAgent,
+  lookup: dns.legacy,
+  setServers: dns.setServers,
+  dns
+}
