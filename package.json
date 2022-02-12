@@ -1,13 +1,13 @@
 {
   "name": "https-dane",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "https-dane.js",
   "scripts": {
     "test": "node test.js"
   },
   "dependencies": {
-    "hdns": "github:lukeburns/hdns"
+    "hdns": "^0.8.0"
   },
   "devDependencies": {
     "brittle": "^2.0.3"

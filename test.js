@@ -3,9 +3,7 @@ const https = require('https')
 const { DANEAgent, setServers, lookup } = require('./https-dane.js')
 
 setServers([
-  '103.196.38.38',
-  '103.196.38.39',
-  '103.196.38.40'
+  '127.0.0.1:5350'
 ])
 
 test('dane', async assert => {
